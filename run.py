@@ -20,7 +20,6 @@ def main(argv):
     print(f"Prediction:\t{prediction.upper()}")
 
 
-# TODO: Rewrite
 def get_ngrams(sequences, n=3):
     num_sequences = len(sequences)
     ngrams = np.empty(num_sequences, dtype=object)

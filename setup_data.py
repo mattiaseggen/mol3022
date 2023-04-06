@@ -24,7 +24,6 @@ def preprocess_data(data, max_sequence_length, is_input=True):
     This function creates tokens from the dataset and pads the sequences if
     they are shorter than the maximum sequence length.
     """
-    # TODO: Rewrite
     if is_input is True:
         input_data = sequence2ngram(data)
         input_data, input_tokenizer = tokenize(input_data)
@@ -50,6 +49,5 @@ def tokenize(data, char_level=False):
 
 
 def sequence2ngram(sequences, n=3):
-    # TODO: Rewrite
     return np.array([[sequence[i:i+n] for i in range(len(sequence))]
                      for sequence in sequences], dtype=object)
