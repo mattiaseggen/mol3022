@@ -1,5 +1,4 @@
 # MOL3022 Project
-Created by Mattias Eggen
 
 ### Installation
 #### SSH
